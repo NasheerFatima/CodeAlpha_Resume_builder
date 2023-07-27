@@ -8,7 +8,7 @@
 <body>
   <h1>Resume Builder</h1>
 
-  <!-- Personal Information Section -->
+
   <h2>Personal Information</h2>
   <label for="fullName">Full Name:</label>
   <input type="text" id="fullName" placeholder="John Doe">
@@ -16,19 +16,18 @@
   <label for="email">Email:</label>
   <input type="email" id="email" placeholder="johndoe@example.com">
 
-  <!-- Add more personal information fields as needed -->
 
-  <!-- Education Section -->
+
   <h2>Education</h2>
   <div id="educationContainer">
-    <!-- Education fields will be dynamically added here -->
+ 
   </div>
   <button onclick="addEducation()">Add Education</button>
 
-  <!-- Experience Section -->
+
   <h2>Experience</h2>
   <div id="experienceContainer">
-    <!-- Experience fields will be dynamically added here -->
+   
   </div>
   <button onclick="addExperience()">Add Experience</button>
   
@@ -42,30 +41,19 @@
   
   
 
-  <!-- Skills Section -->
   <h2>Skills</h2>
   <textarea id="skills" rows="4" placeholder="Enter your skills here"></textarea>
   
    <h2>Projects/Internships</h2>
   <textarea id="Projects/Internships" rows="4" placeholder="Enter name of Projects/Internships here"></textarea>
   
-
+ <button onclick="generateResume()">Generate Resume</button>
   
-  
-
-  <!-- Generate Resume Button -->
-  <button onclick="generateResume()">Generate Resume</button>
-  
-  
-
-  <!-- Rest of your content -->
 </body>
 </html>
 
-  
-  
-  <script>
-    // JavaScript functions to handle dynamic addition of education and experience fields
+ <script>
+   
     function addEducation() {
       const educationContainer = document.getElementById("educationContainer");
       const newEducationField = document.createElement("div");
@@ -85,8 +73,6 @@
       `;
       experienceContainer.appendChild(newExperienceField);
     }
-
-	
 	function addStrengths() {
       const StrengthsContainer = document.getElementById("StrengthsContainer");
       const newStrengthsField = document.createElement("div");
@@ -96,9 +82,6 @@
       `;
       StrengthsContainer.appendChild(newStrengthsField);
     }
-
-
-
 	function addHobbies() {
       const HobbiesContainer = document.getElementById("HobbiesContainer");
       const newHobbiesField = document.createElement("div");
@@ -109,16 +92,6 @@
       HobbiesContainer.appendChild(newHobbiesField);
     }
 
-
-
-
-
-
-    function generateResume() {
-      // Here, you can gather all the input data, create a resume template, and display it to the user.
-      // You can also consider using external libraries like Handlebars.js for templating the resume.
-      // Additionally, you might want to store the data on the server using AJAX requests or other methods.
-    }
   </script>
 </body>
 </html>
